@@ -110,11 +110,17 @@
                         Removed
                     @endif
                 </td>
-                <td>{{$value->orderTotal}}</td>
+                <td>${{$value->orderTotal}}</td>
                 <td>{{$value->latestOrderDate}}</td>
                 <td>{{$value->orderCount}}</td>
             </tr>
             @endforeach
         </table>
+
+        <div class="content">
+            <div class="links">
+                <a style="text-decoration:underline" href="/">Home</a>
+            </div>
+        </div>
     </body>
 </html>
